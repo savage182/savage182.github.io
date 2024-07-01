@@ -13,6 +13,8 @@ let form = document.querySelector('form');
 let promptInput = document.querySelector('input[name="prompt"]');
 let output = document.querySelector('.output');
 
+const file = 'package-lock.json';
+const data = 'package.json';
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
   model: "gemini-pro",
